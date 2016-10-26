@@ -1,0 +1,3 @@
+num = float(input('please input your number:'))  #将输入的数值转换为浮点型，如果使用int，输入小数就会报错
+num_sqrt = num ** 0.5 #一个数的0.5次方
+print("%f的平方根是：%f" % (num,num_sqrt)) 
