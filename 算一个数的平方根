@@ -1,3 +1,25 @@
 num = float(input('please input your number:'))  #将输入的数值转换为浮点型，如果使用int，输入小数就会报错
 num_sqrt = num ** 0.5 #一个数的0.5次方
 print("%f的平方根是：%f" % (num,num_sqrt)) 
+
+#执行以上代码输出结果为:
+请输入一个数字： 4
+4.000 的平方根为 2.000
+
+#上面程序只适用于正数
+#负数和复数可以使用以下的方式：
+
+
+# 计算实数和复数平方根
+# 导入复数数学模块
+
+import cmath
+
+num = int(raw_input("请输入一个数字: "))
+num_sqrt = cmath.sqrt(num)
+print('{0} 的平方根为 {1:0.3f}+{2:0.3f}j'.format(num ,num_sqrt.real,num_sqrt.imag))
+
+
+#执行以上代码输出结果为:
+请输入一个数字: -8
+-8 的平方根为 0.000+2.828j
